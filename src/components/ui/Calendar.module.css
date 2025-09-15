@@ -1,0 +1,6 @@
+/* Calendar Component Styles */
+.calendar {
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+}

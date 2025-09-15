@@ -1,0 +1,142 @@
+.container {
+  padding: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: auto;
+  max-height: calc(100vh - 100px);
+}
+
+.header {
+  margin-bottom: 0.5rem;
+  position: sticky;
+  top: -2rem; /* offset container padding so background reaches top */
+  z-index: 5;
+  background: #ffffff; /* match most of container padding visually */
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  align-content: center;
+}
+
+.backBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.backBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.backBtn {
+  width: 100%;
+  max-width: fit-content;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.backBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Filters */
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.reset-btn {
+  background: var(--color-error, #dc3545);
+  color: var(--color-text-inverse, #fff);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.reset-btn:hover {
+  background: #b02a37;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+/* Table */
+.tableWrapper {
+  max-height: 450px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background: #f9fafb;
+  z-index: 1;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.viewBtn {
+  background: #2563eb;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.viewBtn:hover {
+  background: #1e40af;
+}

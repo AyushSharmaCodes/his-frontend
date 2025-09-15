@@ -1,0 +1,68 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  /* background-color: #f9fafb; */
+}
+
+/* ===== LEFT PANEL ===== */
+.leftPanel {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/05/16/53/zucchini-5263781_1280.jpg");
+}
+
+.his-logo {
+  display: flex;
+  align-items: left;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.his-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+
+.leftPanel h2 {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.left-footer {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: left;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* ===== RIGHT PANEL ===== */
+.rightPanel {
+  background-color: #ffffffeb;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .leftPanel {
+    display: none;
+  }
+
+  .rightPanel {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,169 @@
+.container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  position: sticky;
+  top: -2rem; /* offset container padding so background reaches top */
+  z-index: 5;
+  background: #ffffff; /* match most of container padding visually */
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+/* Quick Access Cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  color: #3b82f6;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  color: #111827;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #374151;
+  flex-grow: 1;
+}
+
+.cardLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+/* Recent Case Activities */
+.activities {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0; /* allows child scroller to size correctly */
+}
+.tableWrapper {
+  overflow-x: auto;
+  overflow-y: auto; /* vertical scroll when activities grow */
+  flex: 1;
+  min-height: 0;
+}
+
+/* Sticky table header inside scrollable wrapper */
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #0066cc; /* match header background */
+  color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.75rem;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #f3f4f6;
+  color: #111827;
+}
+
+.table tr:hover {
+  background: #f9fafb;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badgeApproved {
+  background: #16a34a;
+}
+
+.badgeRejected {
+  background: #dc2626;
+}
+
+.badgePending {
+  background: #f59e0b;
+}

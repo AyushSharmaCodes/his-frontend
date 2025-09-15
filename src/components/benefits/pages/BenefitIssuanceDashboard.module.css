@@ -1,0 +1,147 @@
+.container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: calc(100vh - 100px);
+}
+
+.header {
+  margin-bottom: 1.25rem;
+  color: #111827;
+  border-bottom: 2px solid #f3f4f6;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: #222;
+}
+
+.actionBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  width: auto;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  align-content: center;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Scroll wrapper */
+.tableWrapper {
+  flex: 1;
+  overflow-y: auto;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: #3270ae;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+}
+
+.table th {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.status {
+  font-weight: 500;
+}
+
+.status.pending {
+  color: #d97706;
+}
+
+.status.issued {
+  color: #059669;
+}
+
+.status.failed {
+  color: #dc2626;
+}
+
+/* Issue Button */
+.issueBtn {
+  background: #2563eb;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.issueBtn:hover {
+  background: #1e40af;
+}
+
+.issueBtn:active {
+  background: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,154 @@
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  position: sticky;
+  top: -2rem; /* offset container padding to fill background to top */
+  z-index: 5;
+  background: #ffffff;
+  padding-top: 1rem; /*match container top padding */
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.infoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.infoList li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #f3f4f6;
+  color: #111827;
+}
+
+.table tr:hover {
+  background: #f9fafb;
+}
+
+.link {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Status Badges */
+.badge {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badgeApproved {
+  background: #16a34a;
+}
+
+.badgePending {
+  background: #f59e0b;
+}
+
+.badgeDenied {
+  background: #dc2626;
+}
+
+/* Activity Log */
+.logList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logList li {
+  margin-bottom: 1rem;
+}
+
+.logDate {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.logDesc {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.deleteButton {
+  margin-top: 1.5rem;
+  background-color: grey;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+}

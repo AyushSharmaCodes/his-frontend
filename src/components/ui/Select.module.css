@@ -1,0 +1,76 @@
+/* Select Component Styles */
+.selectContainer {
+  position: relative;
+  width: 100%;
+}
+.selectTrigger {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  /* font-size: 0.875rem; */
+  /* outline: none; */
+  font-size: 0.875rem;
+  line-height: 1.38rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.selectTrigger:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.selectTrigger:hover {
+  border-color: #9ca3af;
+}
+
+.selectIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #6b7280;
+}
+
+.selectValue {
+  text-align: left;
+  color: #6b7280;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* keep text in one line */
+  flex: 1;
+  min-width: 0; /* allow ellipsis when container shrinks */
+}
+
+.selectContent {
+  display: none;
+  margin-top: 0.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  z-index: 1000; /* ensure above tables/filters */
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.selectContent.open {
+  display: block;
+}
+
+.selectItem {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.selectItem:hover {
+  background-color: #f3f4f6;
+}

@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  background: #f9fafb;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.iconWrapper {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sadIcon {
+  color: #ef4444; /* Red for 4xx */
+}
+
+.errorIcon {
+  color: #f59e0b; /* Amber for 5xx */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.message {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.actionBtn {
+  background: #2563eb !important;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.actionBtn:hover {
+  background: #1d4ed8 !important;
+}
+
+.lockIcon {
+  color: #6b7280; /* Neutral gray for access denied */
+}
+
+.clockIcon {
+  color: #f97316; /* Orange for session timeout */
+}

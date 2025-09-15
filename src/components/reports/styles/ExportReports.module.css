@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  margin: 0;
+  align-content: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.radioLabel {
+  font-size: 0.95rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.radioBtn {
+  width: 14px;
+  height: 14px;
+  accent-color: blue;
+  margin-left: 2px;
+}
+
+.downloadBtn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  background: #2563eb !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.downloadBtn:hover {
+  background: #1d4ed8 !important;
+}

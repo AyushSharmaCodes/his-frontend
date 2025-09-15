@@ -1,0 +1,194 @@
+.form {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 100px);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Form header section */
+.formHeader {
+  width: 100%;
+  padding: 24px;
+  border-bottom: 2px solid #e5e7eb;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.cancelBtn {
+  width: 100%;
+  max-width: 150px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cancelBtn:hover {
+  background-color: red;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.formContent {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+.formField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Horizontal row for grouping two fields side by side */
+.formRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.formRow .formField {
+  flex: 1 1 0;
+}
+
+.formField label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  display: block;
+}
+
+/* Input field alignment and styling */
+.formField input,
+.formField button,
+.formField > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Specific input styling */
+
+.dateButton {
+  width: 100%;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.dateButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.dateButton:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.checkboxRow label {
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+.submitBtn {
+  width: 100%;
+  max-width: 300px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+  margin-top: 24px;
+  position: sticky;
+  bottom: 0.1rem;
+  z-index: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.submitBtn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.submitBtn:active,
+.cancelBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.submitBtn:focus,
+.cancelBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
