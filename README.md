@@ -2,6 +2,26 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Health Insurance System (HIS) Frontend
+
+This is a frontend application for a Health Insurance System built with React, TypeScript, and Vite.
+
+## Security Guidelines
+
+⚠️ **Important Security Notes:**
+
+- **Never commit sensitive data** such as API keys, passwords, or real user information to version control
+- **Use environment variables** for all configuration values (see `.env.example`)
+- **Authentication**: The current demo uses placeholder authentication - replace with proper authentication system
+- **Data Protection**: Ensure all user data is handled according to HIPAA and other relevant regulations
+- **HTTPS**: Always use HTTPS in production environments
+
+### Environment Setup
+
+1. Copy `.env.example` to `.env`
+2. Fill in your actual configuration values
+3. Never commit the `.env` file to version control
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh

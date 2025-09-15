@@ -14,7 +14,9 @@ import ExportReports from "./pages/ExportReports";
 // role can come from context, auth, or props
 type ROLE = "admin" | "caseworker";
 
-let role: ROLE = "admin"; // Change this value to "admin" to test admin routes
+// Get role from localStorage (set by authentication system)
+// Default to "caseworker" if no role is set
+const role: ROLE = (localStorage.getItem("role") as ROLE) || "caseworker";
 
 const ReportsRoutes: React.FC = () => {
   return (

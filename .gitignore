@@ -12,6 +12,26 @@ dist
 dist-ssr
 *.local
 
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# API keys and credentials
+config/secrets.js
+config/credentials.json
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+secrets.*
+credentials.*
+auth.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +42,39 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+.sass-cache/
+.npm
+.node_repl_history
+
+# Personal files
+personal/
+private/
+todo.md
+notes.md
+scratch.*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.rej
+*.old
+
+# Security and certificates
+ssl/
+certificates/
+*.crt
+*.cert
+*.ca-bundle

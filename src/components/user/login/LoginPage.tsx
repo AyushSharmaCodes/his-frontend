@@ -7,20 +7,33 @@ import logo from "../../../assets/HIS_Logo_white.png";
 import LoginCard from "./LoginCard";
 import { useForm } from "react-hook-form";
 
+interface LoginData {
+  username: string;
+  password: string;
+}
+
 const LoginPage: React.FC = () => {
-  const { register, handleSubmit, watch } = useForm();
+  const { register, handleSubmit, watch } = useForm<LoginData>();
 
   const navigate = useNavigate();
 
-  const handleLogin = (data: any) => {
-    if (data.username === "admin" && data.password === "admin") {
-      localStorage.setItem("role", "admin");
-      navigate("/admin/dashboard");
-    } else if (data.username === "user" && data.password === "user") {
-      localStorage.setItem("role", "user");
-      navigate("/user/dashboard");
+  const handleLogin = (data: LoginData) => {
+    // TODO: Replace with actual authentication API call
+    // For demo purposes only - DO NOT use hardcoded credentials in production
+    console.warn("Demo authentication - replace with proper API authentication");
+    
+    // Simulate authentication validation
+    if (data.username && data.password) {
+      // This is demo logic - replace with actual API authentication
+      if (data.username === "admin") {
+        localStorage.setItem("role", "admin");
+        navigate("/admin/dashboard");
+      } else {
+        localStorage.setItem("role", "user");
+        navigate("/user/dashboard");
+      }
     } else {
-      alert("Invalid credentials");
+      alert("Please enter both username and password");
     }
   };
 
